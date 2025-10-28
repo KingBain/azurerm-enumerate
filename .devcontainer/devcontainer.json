@@ -30,6 +30,3 @@
     }
   }
 
-  // (optional) pin Az major:
-  // "containerEnv": { "AZ_PWSH_VERSION": "12.*" }
-}

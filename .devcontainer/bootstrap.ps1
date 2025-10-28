@@ -28,8 +28,8 @@ Install-Module @azParams
 Install-Module -Name Microsoft.Graph -Scope AllUsers -AllowClobber -Force
 
 # Warm up formats/types once so first run in terminal is snappy
-Import-Module Az -ErrorAction Stop
-Import-Module Microsoft.Graph -ErrorAction Stop
+#Import-Module Az -ErrorAction Stop
+#Import-Module Microsoft.Graph -ErrorAction Stop
 
 # Quick versions
 Write-Host "Az version:" (Get-Module Az -ListAvailable | Sort-Object Version -Descending | Select-Object -First 1).Version
