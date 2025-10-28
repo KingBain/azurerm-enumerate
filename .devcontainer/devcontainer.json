@@ -1,12 +1,15 @@
 {
   "name": "PowerShell",
-  "image": "mcr.microsoft.com/powershell:lts-debian-11",
+  "image": "mcr.microsoft.com/powershell:7.5-ubuntu-24.04",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": "true",
+      "installZsh": true,
+      "installOhMyZsh": true,
+      "installOhMyZshConfig": true,
+      "upgradePackages": true,
       "username": "vscode",
-      "upgradePackages": "false",
-      "nonFreePackages": "true"
+      "userUid": "automatic",
+      "userGid": "automatic"
     },
     "ghcr.io/devcontainers/features/azure-cli:1": {
       "version": "latest",
